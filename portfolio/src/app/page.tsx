@@ -1,11 +1,15 @@
 'use client'
 import React from "react";
-import Spline from '@splinetool/react-spline';
+import Navbar from "../components/atoms/Navbar";
+import HeroBanner from "../components/organisms/HeroBanner";
+import Temp from "../components/organisms/TempSection";
 
 const App: React.FC = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <Spline scene="https://prod.spline.design/Dbs30PNeBmDKMOXl/scene.splinecode" />
+    <div className="">
+      <Navbar />
+      <HeroBanner />
+      <Temp />
     </div>
   );
 };
