@@ -6,7 +6,7 @@ import ScrollButton from '../atoms/ScrollButton';
 const HeroBanner = () => {
   const handleScrollClick = (e: any) => {
     e.preventDefault();
-    const element = document.getElementById("tempSection");
+    const element = document.getElementById("Project");
     console.log(element);
     element?.scrollIntoView({ behavior: "smooth" });
   };

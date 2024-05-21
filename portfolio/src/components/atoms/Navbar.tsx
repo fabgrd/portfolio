@@ -4,6 +4,7 @@ import { FaArrowUp } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import clsx from "clsx";
 
 type NavbarElementProps = {
   title: string;
@@ -46,7 +47,7 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
 
   return (
     <motion.button
-      className={`p-2 rounded-full flex justify-center items-center font-extrabold min-w-[50px] ${
+      className={`rounded-full flex justify-center items-center font-extrabold min-w-[50px] ${
         isInView ? "bg-green-500" : ""
       }`}
       onClick={() => {
@@ -59,10 +60,14 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
         }
       }}
     >
-      <li className="text-white text-center text-sm font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 hidden sm:block">
+      <li
+        className={clsx(
+          "bg-black text-white text-xs font-normal tracking-widest uppercase whitespace-normal border border-white rounded-xl mx-1.5 px-2 py-1 transition-all duration-300 focus:outline-none hover:text-opacity-80 hover:shadow-none hover:bg-white hover:text-black"
+        )}
+      >
         {title}
       </li>
-      <li className="text-white text-center text-2xl font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 block sm:hidden">
+      <li className="text-black text-center text-2xl font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 block sm:hidden">
         {mobileIcon}
       </li>
     </motion.button>
@@ -102,46 +107,23 @@ const Navbar = () => {
       initial={{ opacity: 0, display: "none", y: 50 }}
       animate={controls}
       transition={{ duration: 0.5 }}
-      className={`fixed bottom-0 p-8 flex justify-center items-center z-[1000] w-full my-8`}
+      className={`fixed top-0 left-0 z-[1000] w-full`}
     >
-      <div className="rounded-full bg-dark-gray border border-light-gray p-4 flex justify-around items-center gap-2 opacity-80">
-        <button
-          className={`bg-primary-blue p-2 rounded-full h-full hover:scale-110 hover:-translate-y-1 transition-all duration-150 ${
-            activeElement === "top" ? "bg-green-500" : ""
-          }`}
-          onClick={() => {
-            if (typeof window !== "undefined") {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            }
-          }}
-        >
-          <FaArrowUp size={24} color="white" />
-        </button>
-        <ul className="flex justify-around items-center gap-4">
+        <ul className="flex justify-around items-center">
           <NavbarElement
-            mobileIcon="🚀"
-            title={"Accueil"}
+            mobileIcon="💡"
+            title={t("navbar.projects")}
             scrollToId=""
             setActiveElement={handleSetActiveElement}
             />
           <NavbarElement
             mobileIcon="💡"
-            title={"Projects"}
-            scrollToId=""
-            setActiveElement={handleSetActiveElement}
-            />
-          <NavbarElement
-            mobileIcon="💡"
-            title={"About"}
+            title={t("navbar.about")}
             scrollToId=""
             setActiveElement={handleSetActiveElement}
             />
         </ul>
         <LanguageSwitcher />
-      </div>
     </motion.nav>
   );
 };

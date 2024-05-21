@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "catchphrase": "Because artificial intelligence </br><span id=\"handDrawnLine\">cannot do everything</span> yet...",
+    "subtitle": "Trust the <strong id=\"handDrawnLine\">first agency with poly-expertise</strong> to support you in all your projects.",
+    "getStarted": "I wish to start",
+    "accompaniedProject": "+50 projects supported"
+  },
+  "globe": {
+    "title": "Trust the <br/><span>first agency with poly-expertise</span> <br/>to support you in <br/> <span id=\"handDrawnLine\">all your projects</span>.",
+    "address": "Meet us in our offices at <span id=\"handDrawnCircle\"><b>Paris</b>, <b>Seoul</b>, <b>Brussels</b></span>."
+  },
+  "features": {
+    "title": "One agency for all <span className=\"relative\"><span id=\"handDrawnCircle\">your needs</span></span>",
+    "description": "At Mood, passionate about innovation and aware of the power of storytelling, we commit to bringing your projects to life, providing you with a young, dynamic team expert in social media 😉",
+    "features": {
+      "visualIdentityTitle": "Creation of your visual identity",
+      "visualIdentityDescription": "We create your logo, your graphic charter, and all your communication supports.",
+      "websiteAppTitle": "Development of your custom website and/or mobile app",
+      "websiteAppDescription": "We develop your custom website and/or mobile app using the latest technologies and trends.",
+      "socialNetworkTitle": "Strengthening your presence on social networks and the web",
+      "socialNetworkDescription": "We assist you in creating your communication strategy and managing your social networks."
+    }
+  },
+  "realisations": {
+    "title": "Our latest achievements",
+    "description": "What we do best, nothing more, nothing less.",
+    "seeMoreBtnLabel": "See for yourself 👀"
+  },
+  "steps": {
+    "title": "How do we function?",
+    "description": "With speed and <span id=\"handDrawnScribble\">efficiency</span>.",
+    "1": {
+      "title": "Exchange",
+      "description": "We discuss your project, understand your needs, and advise you."
+    },
+    "2": {
+      "title": "All-nighter",
+      "description": "Our teams bring your project to life using the latest technologies and trends."
+    },
+    "3": {
+      "title": "Delivery",
+      "description": "We deliver your finalized project and have a coffee together for you to express your satisfaction."
+    },
+    "securedPayment": "Secure payment via Stripe",
+    "communication": "Easy communication via Airtable",
+    "delivery": "Project delivered in any format",
+    "ctaLabel": "I wish to start"
+  },
+  "about": {
+    "title": "Our team"
+  },
+  "packages": {
+    "title": "Discover our packages",
+    "subtitle": "And let's set our first meeting 😉",
+    "loading": "Loading packages...",
+    "none": "No package available at the moment.",
+    "cards": {
+      "misc": {
+        "from": "From",
+        "monthly": "/month",
+        "start": "Start",
+        "noTax": "Excl. Tax",
+        "noEngagement": "No conditions - No commitment"
+      },
+      "main": {
+        "graphic": {
+          "title": "Visual Identity and Graphic Charter",
+          "description": "Creation of brand identity, personal branding, logo, communication campaign, graphic charter, communication supports..."
+        },
+        "socials": {
+          "title": "Social Networks and Content Creation",
+          "description": "Management of your social networks, content creation, editorial strategy, SEO..."
+        },
+        "dev": {
+          "title": "Web and Mobile Development",
+          "description": "Mockup and design, web and mobile development, showcase site, e-commerce site, mobile application (iOS & Android)"
+        }
+      },
+      "details": {
+        "dev": {
+          "title": ""
+        },
+        "graphic": {
+          "title": ""
+        },
+        "social": {
+          "title": ""
+        }
+      }
+    }
+  },
+  "statistics": {
+    "title": "MOOD IN NUMBERS",
+    "since": "since its creation",
+    "cumulate": "cumulative views across all projects",
+    "productions": "full productions",
+    "projects": "projects supported"
+  },
+  "partners": {
+    "title": "They <span id=\"handDrawnLine\">trusted us</span> with their project realization</h1>"
+  },
+  "footer": {
+    "stayInTouch": "Stay in touch",
+    "instagram": "Find all our news on our Instagram account",
+    "email": "Contact • moodproduction.contact@gmail.com",
+    "legals": "LEGAL MENTIONS",
+    "policy": "PRIVACY POLICY",
+    "sales": "GENERAL SALES CONDITIONS"
+  },
+  "navbar": {
+    "projects": "projects",
+    "about": "about"
+  }
+}
