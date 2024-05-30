@@ -23,7 +23,7 @@ const Button = ({
         variant === "white" &&
           clsx(
             !basicCase && "uppercase",
-            "bg-white shadow-[5px_5px_0px_1px] border-light-gray border transition-all duration-300 hover:shadow-none shadow-light-gray text-dark p-4 font-extrabold rounded-md text-xl md:text-2xl"
+            "bg-primary-light shadow-[5px_5px_0px_1px] border-light-gray border transition-all duration-300 hover:shadow-none shadow-light-gray text-dark p-4 font-extrabold rounded-md text-xl md:text-2xl"
           ),
         variant === "primary" &&
           clsx(

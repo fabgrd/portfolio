@@ -10,7 +10,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ onClick }) => {
     <div className="absolute xs:bottom-20 md:bottom-40 flex justify-center items-center">
       <div
         onClick={onClick}
-        className="w-[35px] h-[64px] rounded-3xl border-4 border-white border-secondary flex justify-center items-center cursor-pointer xs:hidden md:flex"
+        className="w-[35px] h-[64px] rounded-3xl border-4 border-primary-light border-secondary flex justify-center items-center cursor-pointer xs:hidden md:flex"
       >
         <motion.div
           animate={{
@@ -22,7 +22,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ onClick }) => {
             repeatType: 'loop',
             stiffness: 100,
           }}
-          className="w-3 h-3 rounded-full bg-white mb-1"
+          className="w-3 h-3 rounded-full bg-primary-light mb-1"
         />
       </div>
     </div>

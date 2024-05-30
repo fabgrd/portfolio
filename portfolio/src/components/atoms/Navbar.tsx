@@ -62,12 +62,12 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
     >
       <li
         className={clsx(
-          "bg-black text-white text-xs font-normal tracking-widest uppercase whitespace-normal border border-white rounded-xl mx-1.5 px-2 py-1 transition-all duration-300 focus:outline-none hover:text-opacity-80 hover:shadow-none hover:bg-white hover:text-black"
+          "bg-primary-dark text-primary-light text-xs font-normal tracking-widest uppercase whitespace-normal border border-primary-light rounded-xl mx-1.5 px-2 py-1 transition-all duration-300 focus:outline-none hover:text-opacity-80 hover:shadow-none hover:bg-primary-light hover:text-primary-dark"
         )}
       >
         {title}
       </li>
-      <li className="text-black text-center text-2xl font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 block sm:hidden">
+      <li className="text-primary-dark text-center text-2xl font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 block sm:hidden">
         {mobileIcon}
       </li>
     </motion.button>

@@ -14,6 +14,14 @@ const config: Config = {
       'lg': '1024px',
     },
     extend: {
+      colors: {
+        "primary-dark": "#0D0D0D",
+        "primary-light": "#F6F7EE",
+      },
+      textColor: {
+        dark: "#0D0D0D",
+        light: "#F6F7EE",
+      },
       fontFamily: {
         // apfelGrotezk: ['ApfelGrotezk-Regular', 'sans-serif'],
         sans: ['var(--font-apfel)']

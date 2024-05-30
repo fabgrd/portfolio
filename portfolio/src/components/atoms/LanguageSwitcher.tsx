@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
 
   const getButtonClass = (locale: string) => {
     return `focus:outline-none px-2 py-1 rounded-lg ${
-      i18n.language === locale ? "border-2 border-white" : ""
+      i18n.language === locale ? "border-2 border-primary-light" : ""
     }`;
   };
 
@@ -41,11 +41,11 @@ const LanguageSwitcher = () => {
         <FR height={32} width={32} />
       </button>
       <button
-        className={getButtonClass("ko")}
-        onClick={() => onToggleLanguageClick("ko")}
+        className={getButtonClass("cn")}
+        onClick={() => onToggleLanguageClick("cn")}
         style={{
           background:
-            i18n.language === "ko"
+            i18n.language === "cn"
               ? "linear-gradient(to right, #02081E, #000000)"
               : "none",
         }}
