@@ -4,6 +4,7 @@
     "about": "À propos"
   },
   "projects": {
+    "technologies": "Technologies utilisées",
     "1": {
       "title": "Shad",
       "description": "Une application de développement personnel, iOS & Android. Se fixer des objectifs et des récompenses en respectant des routines journalières."
@@ -23,6 +24,28 @@
     "5": {
       "title": "Area",
       "description": "Un projet d'école pour un site et une application mobile de gestion de tâches"
+    }
+  },
+  "about": {
+    "title": "Faire fonctionner mon imagination, tel est mon nindô",
+    "presentation": "Depuis de nombreuses années, je m'engage pleinement dans le développement de solutions numériques fiables, me positionnant ainsi en tant que développeur fullstack. Grâce à mon parcours atypique, j'ai également acquis une solide expérience en design graphique, faisant de moi un creative coder, bien au-delà d'un simple intégrateur web.",
+    "timeline": {
+      "1": "Master 2 (M2), Programmation / développeur informatique, général",
+      "2": "Business et génie logiciel"
+    },
+    "cards": {
+      "conception": {
+        "title": "Conception",
+        "description": "Vous avez un projet ambitieux ? Vous avez besoin d'un MVP adapté à votre budget ? Je suis à votre disposition pour identifier les solutions techniques les plus appropriées à votre projet et concevoir une esquisse personnalisée que vous pourrez utiliser pour le soutenir. Grâce à ma sensibilité graphique et mon réalisme, je peux également répondre à des projets uniques (incluant de l'intégration 3D par exemple), tout en vous conseillant sur la faisabilité de vos idées."
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Que ce soit pour un site web, une application mobile ou une solution logicielle, j'utilise les technologies les plus récentes et adaptées à votre projet."
+      },
+      "deployment": {
+        "title": "Déploiement",
+        "description": "Je propose un service de déploiement complet pour assurer la mise en ligne correcte et le fonctionnement optimal de votre solution. Je prends en charge l'hébergement, la configuration des serveurs, l'optimisation des performances, la sécurisation et la gestion de tous les aspects techniques."
+      }
     }
   }
 }

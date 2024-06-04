@@ -26,6 +26,21 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
+@keyframes scaleAndTranslate {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale3d(0.97162, 0.97162, 1);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+  }
+}
+
+.animate-scaleAndTranslate {
+  animation: scaleAndTranslate 2s ease-in-out;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

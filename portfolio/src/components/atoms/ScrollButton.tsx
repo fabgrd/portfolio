@@ -7,7 +7,7 @@ interface ScrollButtonProps {
 
 const ScrollButton: React.FC<ScrollButtonProps> = ({ onClick }) => {
   return (
-    <div className="absolute xs:bottom-20 md:bottom-40 flex justify-center items-center">
+    <div className="absolute xs:bottom-20 md:bottom-20 flex justify-center items-center">
       <div
         onClick={onClick}
         className="w-[35px] h-[64px] rounded-3xl border-4 border-primary-light border-secondary flex justify-center items-center cursor-pointer xs:hidden md:flex"

@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
 			>{`#00${id}`}
 			</motion.h2>
 			<motion.h4 className="ml-96">
-				Technologies utilisées : {technologies}
+			{t("projects.technologies")}: {technologies}
 			</motion.h4>
 		</motion.section>
 	);

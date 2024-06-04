@@ -7,6 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '12rem',
+    },
     screens: {
       'xs': '200px',
       'sm': '640px',
@@ -23,7 +32,6 @@ const config: Config = {
         light: "#F6F7EE",
       },
       fontFamily: {
-        // apfelGrotezk: ['ApfelGrotezk-Regular', 'sans-serif'],
         sans: ['var(--font-apfel)']
       },
     },

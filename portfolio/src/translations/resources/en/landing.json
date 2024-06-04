@@ -4,9 +4,10 @@
     "about": "about"
   },
   "projects": {
+    "technologies": "Technologies used",
     "1": {
       "title": "Shad",
-      "description": "This is a project description"
+      "description": "A personal development app, iOS & Android. Set goals and rewards by following daily routines."
     }
     
   }
