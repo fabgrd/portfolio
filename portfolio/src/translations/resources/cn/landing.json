@@ -11,19 +11,47 @@
     },
     "2": {
       "title": "Luter",
-      "description": "Un site d'accompagnement et de sécurisation de fonds pour les freelances"
+      "description": "自由职业者的资金陪同和安全网站"
     },
     "3": {
       "title": "NFTXTL",
-      "description": "Un site e-commerce pour une marque de vêtements"
+      "description": "一个服装品牌的电子商务网站"
     },
     "4": {
-      "title": "The Mongomery Diaries",
-      "description": "Un site de blog pour une écrivaine"
+      "title": "蒙哥马利日记",
+      "description": "一位作家的博客网站"
     },
     "5": {
       "title": "Area",
-      "description": "Un projet d'école pour un site et une application mobile de gestion de tâches"
+      "description": "一个用于管理任务的网站和移动应用程序的学校项目"
+    }
+  },
+  "about": {
+    "title": "讓我的想像力發揮作用，這就是我的忍道",
+    "presentation": "多年來，我一直在全心全意地致力於開發可靠的數字解決方案，因此我成為了全棧開發人員。由於我非典型的經歷，我還積累了豐富的平面設計經驗，這使我成為了一名創意編碼人員，而不仅仅是簡單的網絡集成商。",
+    "timeline": {
+      "1": {
+        "title": "碩士2 (M2)，計算機編程/開發人員，通用",
+        "location": "法國里昂高等工程學院(Epitech)"
+      },
+      "2": {
+        "title": "國際商務與軟件工程",
+        "location": "台灣逢甲大學"
+      }
+    },
+    "cards": {
+      "conception": {
+        "title": "設計",
+        "description": "您有一個雄心勃勃的項目嗎?您需要符合預算的MVP嗎?我很樂意幫助您確定最適合您項目的技術解決方案並設計一個個性化的草圖,您可以使用它來支持它。憑藉我的圖形敏感性和現實主義,我還可以滿足獨特的項目（例如包括3D集成），同時為您提供有關您的想法可行性的建議。"
+      },
+      "development": {
+        "title": "開發",
+        "description": "無論是網站、移動應用程序還是軟件解決方案，我都會使用最先進的技術並根據您的項目進行調整。"
+      },
+      "deployment": {
+        "title": "部署",
+        "description": "我提供完整的部署服務，以確保您的解決方案的正確上線和最佳運行。我負責託管、服務器配置、性能優化、安全性和管理所有技術方面。"
+      }
     }
   }
 }

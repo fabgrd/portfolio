@@ -27,11 +27,26 @@
     }
   },
   "about": {
+    "header": "À propos",
     "title": "Faire fonctionner mon imagination, tel est mon nindô",
     "presentation": "Depuis de nombreuses années, je m'engage pleinement dans le développement de solutions numériques fiables, me positionnant ainsi en tant que développeur fullstack. Grâce à mon parcours atypique, j'ai également acquis une solide expérience en design graphique, faisant de moi un creative coder, bien au-delà d'un simple intégrateur web.",
     "timeline": {
-      "1": "Master 2 (M2), Programmation / développeur informatique, général",
-      "2": "Business et génie logiciel"
+      "1": {
+        "title" : "Master 2 (M2), Expert en technologies",
+        "location" : "Epitech, Lyon"
+      },
+      "2": {
+        "title" : "Master 1 (M1), Business international et technologies de l'information",
+        "location" : "Feng Chia University, Taïwan"
+      },
+      "3": {
+        "title" : "Stage Développeur Front-End",
+        "location" : "Wav One Agency, Suisse"
+      },
+      "4": {
+        "title" : "Développeur Full Stack",
+        "location" : "Freelance"
+      }
     },
     "cards": {
       "conception": {

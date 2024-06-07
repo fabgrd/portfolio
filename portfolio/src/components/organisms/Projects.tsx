@@ -24,10 +24,10 @@ const Projects = () => {
         <ProjectCard id={3} src={NftxtlMockup} alt="The Montgomery diaries" description="projects.1.description" technologies="NextJS, "/>
         <ProjectCard id={4} src={AreaMockup} alt="AREA" description="projects.1.description" technologies="NestJS, ReactJS, React Native, TypeScript"/>
       </main>
-      <motion.div
+      {/* <motion.div
         className="fixed bottom-[100px] left-0 right-0 h-[5px] bg-primary-light origin-center"
         style={{ scaleX }}
-      />
+      /> */}
     </div>
   );
 }
