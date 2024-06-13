@@ -9,7 +9,7 @@ const LanguageSwitcher = () => {
   };
 
   const getButtonClass = (locale: string) => {
-    return `focus:outline-none px-2 py-1 rounded-lg ${
+    return `focus:outline-none px-2 py-1 -mt-4 rounded-xl ${
       i18n.language === locale ? "border-2 border-primary-light" : ""
     }`;
   };

@@ -13,8 +13,9 @@ const config: Config = {
       xl: '1.25rem',
       '2xl': '1.563rem',
       '3xl': '1.953rem',
-      '4xl': '10rem',
-      '5xl': '12rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+      'giant': '6rem'
     },
     screens: {
       'xs': '200px',
@@ -26,6 +27,8 @@ const config: Config = {
       colors: {
         "primary-dark": "#000000",
         "primary-light": "#FFFFFF",
+        "secondary-dark" : "#181818",
+        "secondary-light": "#444444"
       },
       textColor: {
         dark: "#000000",

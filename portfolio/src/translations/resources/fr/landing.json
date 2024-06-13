@@ -1,7 +1,8 @@
 {
   "navbar": {
     "projects": "Projets",
-    "about": "À propos"
+    "about": "À propos",
+    "process": "Processus"
   },
   "projects": {
     "technologies": "Technologies utilisées",
@@ -28,34 +29,36 @@
   },
   "about": {
     "header": "À propos",
-    "title": "Faire fonctionner mon imagination, tel est mon nindô",
-    "presentation": "Depuis de nombreuses années, je m'engage pleinement dans le développement de solutions numériques fiables, me positionnant ainsi en tant que développeur fullstack. Grâce à mon parcours atypique, j'ai également acquis une solide expérience en design graphique, faisant de moi un creative coder, bien au-delà d'un simple intégrateur web.",
     "timeline": {
       "1": {
-        "title" : "Master 2 (M2), Expert en technologies",
-        "location" : "Epitech, Lyon"
+        "title": "Master 2 (M2), Expert en technologies",
+        "location": "Epitech, Lyon"
       },
       "2": {
-        "title" : "Master 1 (M1), Business international et technologies de l'information",
-        "location" : "Feng Chia University, Taïwan"
+        "title": "Master 1 (M1), Business international et ingénieurerie logicielle",
+        "location": "Feng Chia University, Taïwan"
       },
       "3": {
-        "title" : "Stage Développeur Front-End",
-        "location" : "Wav One Agency, Suisse"
+        "title": "Stage Développeur Front-End",
+        "location": "Wav One Agency, Suisse"
       },
       "4": {
-        "title" : "Développeur Full Stack",
-        "location" : "Freelance"
+        "title": "Développeur Full Stack",
+        "location": "Freelance"
       }
-    },
+    }
+  },
+  "process": {
+    "title": "Faire fonctionner mon imagination, tel est mon <span className=\"relative\"><span id=\"handDrawnCircle\">nindô</span></span>",
+    "presentation": "Depuis de nombreuses années, je consacre mes efforts au développement de solutions numériques fiables, ce qui m’a permis de me positionner en tant que développeur fullstack. Mon parcours à Epitech m’a offert une formation approfondie en résolution de problèmes et une expertise en programmation dans une diversité de langages et de projets variés. Par ailleurs, mon parcours atypique m’a permis d’acquérir une solide expérience en design graphique, me définissant ainsi comme un creative coder, bien au-delà du rôle traditionnel d'intégrateur web.",
     "cards": {
       "conception": {
         "title": "Conception",
-        "description": "Vous avez un projet ambitieux ? Vous avez besoin d'un MVP adapté à votre budget ? Je suis à votre disposition pour identifier les solutions techniques les plus appropriées à votre projet et concevoir une esquisse personnalisée que vous pourrez utiliser pour le soutenir. Grâce à ma sensibilité graphique et mon réalisme, je peux également répondre à des projets uniques (incluant de l'intégration 3D par exemple), tout en vous conseillant sur la faisabilité de vos idées."
+        "description": "Vous avez un projet ambitieux ? Vous avez besoin d'un MVP ? Grâce à ma sensibilité graphique, je peux concevoir des maquettes modernes avec une UI/UX efficace, mais également répondre à des projets uniques (incluant de l'intégration 3D par exemple), tout en vous conseillant sur la faisabilité de vos idées."
       },
       "development": {
         "title": "Développement",
-        "description": "Que ce soit pour un site web, une application mobile ou une solution logicielle, j'utilise les technologies les plus récentes et adaptées à votre projet."
+        "description": "Que ce soit pour un site web, une application mobile ou même une solution logicielle, je sais identifier les technologies les plus récentes et les plus appropriées à votre projet. Je privilégie une approche qui valorise la qualité et la scalabilité."
       },
       "deployment": {
         "title": "Déploiement",

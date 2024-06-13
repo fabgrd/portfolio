@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useTranslation } from "next-i18next";
 import Image , { StaticImageData } from 'next/image';
 import LogoEpitech from '@/assets/about/logo-epitech.png';

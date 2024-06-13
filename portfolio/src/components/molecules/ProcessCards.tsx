@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -7,24 +6,24 @@ import GifConception from '@/assets/about/paint-palette.gif';
 import GifDevelopment from '@/assets/about/html.gif';
 import GifDeployment from '@/assets/about/rocket.gif';
 
-const AboutCards = () => {
+const CardSection = () => {
   const { t } = useTranslation();
 
   const cards = [
     {
       gif: GifConception,
-      title: t("about.cards.conception.title"),
-      description: t("about.cards.conception.description"),
+      title: t("process.cards.conception.title"),
+      description: t("process.cards.conception.description"),
     },
     {
       gif: GifDevelopment,
-      title: t("about.cards.development.title"),
-      description: t("about.cards.development.description"),
+      title: t("process.cards.development.title"),
+      description: t("process.cards.development.description"),
     },
     {
       gif: GifDeployment,
-      title: t("about.cards.deployment.title"),
-      description: t("about.cards.deployment.description"),
+      title: t("process.cards.deployment.title"),
+      description: t("process.cards.deployment.description"),
     }
   ];
 
@@ -49,4 +48,4 @@ const AboutCards = () => {
   );
 }
 
-export default AboutCards;
+export default CardSection;

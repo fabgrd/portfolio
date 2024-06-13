@@ -1,6 +1,4 @@
-"use client";
 import React, { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -9,14 +7,12 @@ import clsx from "clsx";
 type NavbarElementProps = {
   title: string;
   scrollToId: string;
-  mobileIcon: string;
   setActiveElement: (scrollToId: string) => void;
 };
 
 const NavbarElement: React.FC<NavbarElementProps> = ({
   title,
   scrollToId,
-  mobileIcon,
   setActiveElement,
 }) => {
   const [isInView, setIsInView] = useState(false);
@@ -47,9 +43,8 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
 
   return (
     <motion.button
-      className={`rounded-full flex justify-center items-center font-extrabold min-w-[50px] ${
-        isInView ? "bg-green-500" : ""
-      }`}
+      className={`rounded-full flex justify-center items-center font-extrabold min-w-[50px] ${isInView ? "" : ""
+        }`}
       onClick={() => {
         const targetElement = document.getElementById(scrollToId);
         if (targetElement && typeof window !== "undefined") {
@@ -62,13 +57,11 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
     >
       <li
         className={clsx(
-          "bg-primary-dark text-primary-light text-xs font-normal tracking-widest uppercase whitespace-normal border border-primary-light rounded-xl mx-1.5 px-2 py-1 transition-all duration-300 focus:outline-none hover:text-opacity-80 hover:shadow-none hover:bg-primary-light hover:text-primary-dark"
+          `text-sm font-normal tracking-widest uppercase whitespace-normal border border-primary-light rounded-xl mx-1.5 px-2 py-1 transition-all duration-300 focus:outline-none hover:text-opacity-80 hover:shadow-none hover:bg-primary-light hover:text-primary-dark ${isInView ? "bg-primary-light text-primary-dark" : "bg-primary-dark text-primary-light"
+          }`
         )}
       >
         {title}
-      </li>
-      <li className="text-primary-dark text-center text-2xl font-bold hover:opacity-80 hover:scale-110 transition-all duration-150 block sm:hidden">
-        {mobileIcon}
       </li>
     </motion.button>
   );
@@ -86,8 +79,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > window.innerHeight / 4 
-      && window.scrollY < document.body.scrollHeight - window.innerHeight * 1.2;
+      const scrolled = window.scrollY > window.innerHeight / 4
+        && window.scrollY < document.body.scrollHeight - window.innerHeight * 1.2;
       setIsScrolled(scrolled);
     };
 
@@ -109,21 +102,24 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 z-[1000] w-full`}
     >
-        <ul className="flex justify-around items-center">
-          <NavbarElement
-            mobileIcon="💡"
-            title={t("navbar.projects")}
-            scrollToId=""
-            setActiveElement={handleSetActiveElement}
-            />
-          <NavbarElement
-            mobileIcon="💡"
-            title={t("navbar.about")}
-            scrollToId=""
-            setActiveElement={handleSetActiveElement}
-            />
-        </ul>
-        <LanguageSwitcher />
+      <ul className="flex justify-around items-center">
+        <NavbarElement
+          title={t("navbar.about")}
+          scrollToId="about"
+          setActiveElement={handleSetActiveElement}
+        />
+        <NavbarElement
+          title={t("navbar.process")}
+          scrollToId="process"
+          setActiveElement={handleSetActiveElement}
+        />
+        <NavbarElement
+          title={t("navbar.projects")}
+          scrollToId="projects"
+          setActiveElement={handleSetActiveElement}
+        />
+      </ul>
+      <LanguageSwitcher />
     </motion.nav>
   );
 };

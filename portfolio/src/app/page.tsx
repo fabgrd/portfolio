@@ -5,8 +5,9 @@ import Navbar from "../components/atoms/Navbar";
 import HeroBanner from "../components/organisms/HeroBanner";
 import Projects from "../components/organisms/Projects";
 import About from "../components/organisms/About";
-import ThreeGifSection from "../components/organisms/ThreeGifSection";
-import SquiggleSVG from "@/components/molecules/Squiggle";
+import Process from "../components/organisms/Process";
+import SquiggleSVG from "../components/molecules/Squiggle";
+import Footer from "../components/organisms/Footer";
 
 const App: React.FC = () => {
   return (
@@ -15,8 +16,9 @@ const App: React.FC = () => {
       <HeroBanner />
       <SquiggleSVG />
       <About />
-      <ThreeGifSection />
+      <Process />
       <Projects />
+      <Footer />
     </div>
   );
 };

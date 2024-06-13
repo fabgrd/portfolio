@@ -1,33 +1,60 @@
-import { motion, useScroll, useSpring } from "framer-motion";
-import ProjectCard from "@/components/molecules/ProjectCard";
-import ShadMockup from "@/assets/projects/Shad.png";
-import LuterMockup from "@/assets/projects/Luter.png";
-import NftxtlMockup from "@/assets/projects/Nftxtl.png";
-import AreaMockup from "@/assets/projects/Nftxtl.png";
-import MontgomeryMockup from "@/assets/projects/Nftxtl.png";
+import React, { useEffect, useRef, useState } from 'react';
+import ProjectCard from '@/components/molecules/ProjectCard';
+import ShadMockup from '@/assets/projects/Shad.png';
+import LuterMockup from '@/assets/projects/Luter.png';
+import NftxtlMockup from '@/assets/projects/Nftxtl.png';
+import AreaMockup from '@/assets/projects/Nftxtl.png';
 
+const Projects: React.FC = () => {
+  const [projectElements, setProjectElements] = useState<HTMLDivElement[]>([]);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const previousScrollTop = useRef<number>(0);
 
-const Projects = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+  useEffect(() => {
+    const elements = document.querySelectorAll<HTMLDivElement>('.project-card');
+    setProjectElements(Array.from(elements));
+  }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-dark text-primary-light p-8" id="projects">
+    <div
+      className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-dark text-primary-light p-8 mb-10"
+      id="projects"
+      ref={containerRef}
+    >
       <main>
-        <ProjectCard id={1} src={ShadMockup} alt="Shad" description="projects.1.description" technologies="React Native, Redux, MongoDB, NodeJS"/>
-        <ProjectCard id={2} src={LuterMockup} alt="Luter" description="projects.1.description" technologies="ReactJS, TypeScript, Redux, Tailwind"/>
-        <ProjectCard id={3} src={NftxtlMockup} alt="NFTXTL" description="projects.1.description" technologies=""/>
-        <ProjectCard id={3} src={NftxtlMockup} alt="The Montgomery diaries" description="projects.1.description" technologies="NextJS, "/>
-        <ProjectCard id={4} src={AreaMockup} alt="AREA" description="projects.1.description" technologies="NestJS, ReactJS, React Native, TypeScript"/>
+        <ProjectCard
+          id={1}
+          className="project-card"
+          src={ShadMockup}
+          alt="Shad"
+          description="projects.1.description"
+          technologies="React Native, Redux, MongoDB, NodeJS"
+        />
+        <ProjectCard
+          id={2}
+          className="project-card"
+          src={LuterMockup}
+          alt="Luter"
+          description="projects.1.description"
+          technologies="ReactJS, TypeScript, Redux, Tailwind"
+        />
+        <ProjectCard
+          id={3}
+          className="project-card"
+          src={NftxtlMockup}
+          alt="NFTXTL"
+          description="projects.1.description"
+          technologies=""
+        />
+        <ProjectCard
+          id={4}
+          className="project-card"
+          src={AreaMockup}
+          alt="AREA"
+          description="projects.1.description"
+          technologies="NestJS, ReactJS, React Native, TypeScript"
+        />
       </main>
-      {/* <motion.div
-        className="fixed bottom-[100px] left-0 right-0 h-[5px] bg-primary-light origin-center"
-        style={{ scaleX }}
-      /> */}
     </div>
   );
 }

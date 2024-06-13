@@ -4,7 +4,7 @@ import clsx from "clsx";
 type Props = {
   children: React.ReactNode;
   onClick?: (e: any) => void;
-  variant?: "white" | "primary";
+  variant?: "secondary" | "primary";
   className?: string;
   basicCase?: boolean;
 };
@@ -20,20 +20,22 @@ const Button = ({
     <button
       onClick={onClick}
       className={clsx(
-        variant === "white" &&
+        "relative overflow-hidden group transition-all duration-300",
+        variant === "secondary" &&
           clsx(
-            !basicCase && "uppercase",
-            "bg-primary-light shadow-[5px_5px_0px_1px] border-light-gray border transition-all duration-300 hover:shadow-none shadow-light-gray text-dark p-4 font-extrabold rounded-md text-xl md:text-2xl"
+            !basicCase && "",
+            "text-dark font-medium rounded-md text-md md:text-md py-2 px-4"
           ),
         variant === "primary" &&
           clsx(
-            !basicCase && "uppercase",
-            "bg-primary-dark shadow-[5px_5px_0px_1px] transition-all duration-300 hover:shadow-none shadow-primary-blue text-primary-light p-4 font-extrabold rounded-md text-md lg:text-xl"
+            !basicCase && "",
+            "bg-primary-dark text-primary-light font-medium rounded-md text-md lg:text-md py-2 px-4"
           ),
         className
       )}
     >
       {children}
+      <span className="absolute bottom-0 left-0 h-1 bg-primary-light w-0 group-hover:w-full transition-all duration-300"></span>
     </button>
   );
 };

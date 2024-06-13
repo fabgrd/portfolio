@@ -8,6 +8,29 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+#handDrawnCircle::before {
+  content: '';
+  background-image: url('../assets/about/oval-scribble-1.svg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+}
+
+#handDrawnCircle {
+  position: relative;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

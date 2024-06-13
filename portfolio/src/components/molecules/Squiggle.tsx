@@ -33,9 +33,9 @@ const SquiggleSVG: React.FC = () => {
 
   return (
     <svg
-      width="10"
-      height="10"
-      viewBox="0 0"
+      width="500"
+      height="500"
+      viewBox="0 0 500 500"
       opacity="1"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
