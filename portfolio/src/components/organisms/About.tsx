@@ -17,7 +17,7 @@ const About = () => {
             <div>
               <Parallax translateX={[-10, 10]}>
                 <motion.h1
-                  className="relative text-giant font-thin -z-10"
+                  className="relative text-3xl md:text-giant font-thin -z-10"
                   initial={{ opacity: 0, y: -50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}

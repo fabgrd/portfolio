@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-dark text-primary-light p-8 mb-10"
+      className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-dark text-primary-light p-8"
       id="projects"
       ref={containerRef}
     >

@@ -9,13 +9,13 @@ const LanguageSwitcher = () => {
   };
 
   const getButtonClass = (locale: string) => {
-    return `focus:outline-none px-2 py-1 -mt-4 rounded-xl ${
+    return `focus:outline-none px-2 py-1 rounded-xl ${
       i18n.language === locale ? "border-2 border-primary-light" : ""
     }`;
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center gap-2 absolute top-0 right-0 mt-4 mr-4 z-50">
+    <div className="fixed flex flex-col items-center gap-2 top-4 right-4 w-full max-w-[80px] md:max-w-none md:fixed md:flex-row md:top-4 md:right-4 md:w-auto z-50">
       <button
         className={getButtonClass("en")}
         onClick={() => onToggleLanguageClick("en")}

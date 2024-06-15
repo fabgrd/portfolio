@@ -10,7 +10,7 @@ const Process = () => {
   return (
     <ParallaxProvider>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#000000] to-primary-dark text-primary-light" id='process'>
-        <div className="container mx-auto">
+        <div className="md:container md:mx-auto xs:mt-20">
           <motion.div
             className="p-6 bg-dark-gray rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 50 }}

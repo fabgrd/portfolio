@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
       className={className}
     >
       <div className="flex flex-col items-center my-5">
-        <motion.h1 className="text-2xl font-medium text-primary-light">{alt}</motion.h1>
+        <motion.h1 className="text-4xl font-medium text-primary-light">{alt}</motion.h1>
         <motion.p className="text-2xl font-thin text-primary-light mt-8 mb-16">{t(description)}</motion.p>
         <Image
           src={src}

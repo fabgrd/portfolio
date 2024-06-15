@@ -6,7 +6,6 @@ import HeroBanner from "../components/organisms/HeroBanner";
 import Projects from "../components/organisms/Projects";
 import About from "../components/organisms/About";
 import Process from "../components/organisms/Process";
-import SquiggleSVG from "../components/molecules/Squiggle";
 import Footer from "../components/organisms/Footer";
 
 const App: React.FC = () => {
@@ -14,7 +13,6 @@ const App: React.FC = () => {
     <div className="z-10">
       <Navbar />
       <HeroBanner />
-      <SquiggleSVG />
       <About />
       <Process />
       <Projects />
