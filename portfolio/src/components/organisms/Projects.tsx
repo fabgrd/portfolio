@@ -6,14 +6,7 @@ import NftxtlMockup from '@/assets/projects/Nftxtl.png';
 import AreaMockup from '@/assets/projects/Nftxtl.png';
 
 const Projects: React.FC = () => {
-  const [projectElements, setProjectElements] = useState<HTMLDivElement[]>([]);
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const previousScrollTop = useRef<number>(0);
-
-  useEffect(() => {
-    const elements = document.querySelectorAll<HTMLDivElement>('.project-card');
-    setProjectElements(Array.from(elements));
-  }, []);
 
   return (
     <div

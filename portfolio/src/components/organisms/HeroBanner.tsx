@@ -11,7 +11,7 @@ const HeroBanner = () => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="h-screen flex justify-center items-center w-full ">
       <Spline scene="https://prod.spline.design/Dbs30PNeBmDKMOXl/scene.splinecode" />
       <ScrollButton onClick={handleScrollClick} />
     </div>

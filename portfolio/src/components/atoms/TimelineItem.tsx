@@ -30,9 +30,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ event }) => {
       className={`flex justify-between items-center`}
     >
       <div className="z-20 absolute bg-white shadow-xl w-14 h-14 rounded-full left-4">
-        <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "30px", color: "#000000" }}>
-          <Image src={event.icon} alt={event.title} width={40} height={40} />
-        </div>
+          <Image src={event.icon} alt={event.title} unoptimized={true} />
       </div>
       <div className="pl-16 py-6 rounded-lg shadow-xl">
         <h4 className="mb-1 font-light text-primary-light text-md">

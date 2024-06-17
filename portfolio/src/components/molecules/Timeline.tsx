@@ -51,7 +51,7 @@ const Timeline: React.FC = () => {
 
   return (
     <div className="container mx-auto font-Apfel">
-      <div className="relative wrap overflow-hidden p-10 h-full flex flex-col">
+      <div className="relative wrap -ml-10 ml-0 p-10 h-full flex flex-col">
         <div
           className="absolute border border-white border-4 h-full rounded-lg"
         ></div>

@@ -20,9 +20,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
 
-  const y = useParallax(scrollYProgress, 150);
+  const y = useParallax(scrollYProgress, 0);
   const smoothY = useSpring(y, {
-    stiffness: 50,
+    stiffness: 150,
     damping: 10,
     restDelta: 0.001
   });
