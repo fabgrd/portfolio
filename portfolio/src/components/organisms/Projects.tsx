@@ -58,21 +58,21 @@ const Projects: React.FC = () => {
               src={LuterMockup}
               alt="Luter"
               description="projects.2.description"
-              technologies="ReactJS, TypeScript, Redux, Tailwind"
+              technologies="ThreeJS, Stripe, ReactJS, TypeScript, Redux, Tailwind"
             />
             <ProjectCard
               id={3}
               src={NftxtlMockup}
               alt="NFTXTL"
-              description="projects.1.description"
-              technologies=""
+              description="projects.3.description"
+              technologies="Stripe, Sanity, ReactJS, TypeScript, Redux"
             />
             <ProjectCard
               id={4}
               src={AreaMockup}
-              alt="AREA"
-              description="projects.1.description"
-              technologies="NestJS, ReactJS, React Native, TypeScript"
+              alt="The Montgomery Diaries"
+              description="projects.4.description"
+              technologies="NestJS, ReactJS, TypeScript, Vercel"
             />
           </div>
         </div>
@@ -100,21 +100,21 @@ const Projects: React.FC = () => {
                 src={LuterMockup}
                 alt="Luter"
                 description="projects.2.description"
-                technologies="ReactJS, TypeScript, Redux, Tailwind"
+                technologies="ThreeJS, Stripe, ReactJS, TypeScript, Redux, Tailwind"
               />
               <ProjectCard
                 id={3}
                 src={NftxtlMockup}
                 alt="NFTXTL"
-                description="projects.1.description"
-                technologies=""
+                description="projects.3.description"
+                technologies="Stripe, Sanity, ReactJS, TypeScript, Redux"
               />
               <ProjectCard
                 id={4}
                 src={AreaMockup}
-                alt="AREA"
-                description="projects.1.description"
-                technologies="NestJS, ReactJS, React Native, TypeScript"
+                alt="The Montgomery Diaries"
+                description="projects.4.description"
+                technologies="NestJS, ReactJS, TypeScript, Vercel"
               />
             </div>
           </div>
