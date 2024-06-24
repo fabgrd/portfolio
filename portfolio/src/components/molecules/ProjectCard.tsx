@@ -13,16 +13,15 @@ interface ProjectCardProps {
   alt: string;
   description: string;
   technologies: string;
-  className?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, technologies, className }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, technologies }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
 
-  const y = useParallax(scrollYProgress, 0);
+  const y = useParallax(scrollYProgress, 50);
   const smoothY = useSpring(y, {
-    stiffness: 150,
+    stiffness: 100,
     damping: 10,
     restDelta: 0.001
   });
@@ -33,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
     <motion.section
       style={{ y: smoothY }}
       ref={ref}
-      className={className}
+      className="mb-48"
     >
       <div className="flex flex-col items-center my-5">
         <motion.h1 className="text-4xl font-medium text-primary-light">{alt}</motion.h1>
@@ -45,14 +44,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
           width={800}
         />
       </div>
-      <motion.h2
-        style={{ scrollSnapTypeY: smoothY }}
-        className="text-3xl font-thin text-right text-primary-light mr-96"
-      >{`#00${id}`}
-      </motion.h2>
-      <motion.h4 className="ml-96">
-        {t("projects.technologies")}: {technologies}
-      </motion.h4>
+      <div className="flex justify-between mt-4">
+        <motion.h4 className="text-md font-thin text-primary-light text-left w-2/3">
+          {t("projects.technologies")}: {technologies}
+        </motion.h4>
+        <motion.h2
+          style={{ scrollSnapTypeY: smoothY }}
+          className="text-3xl font-thin text-primary-light text-right"
+        >{`#00${id}`}</motion.h2>
+      </div>
     </motion.section>
   );
 };

@@ -31,7 +31,6 @@ const About = () => {
         <div className="min-h-screen bg-gradient-to-b from-[#000000] to-primary-dark text-primary-light flex items-center" id='about'>
           <div className="container mx-auto p-8 flex flex-col justify-center">
             <ParallaxProvider>
-              <header>
                 <div>
                   <Parallax translateX={[-10, 10]}>
                     <motion.h1
@@ -44,7 +43,6 @@ const About = () => {
                     </motion.h1>
                   </Parallax>
                 </div>
-              </header>
               <div className="grid grid-cols-1 grid-cols-2 items-center mt-8 mt-0">
                 <div className="p-4 flex justify-center justify-start">
                   <Parallax translateY={[20, -20]}>
@@ -55,7 +53,7 @@ const About = () => {
                     >
                       <Image
                         src={ProfilePicture}
-                        alt="Profile Picture"
+                        alt="Profile picture image"
                         className="rounded-lg shadow-lg h-auto filter grayscale opacity-100 z-10"
                       />
                     </motion.div>
@@ -91,7 +89,6 @@ const About = () => {
       )}
     </>
   );
-
 }
 
 export default About;

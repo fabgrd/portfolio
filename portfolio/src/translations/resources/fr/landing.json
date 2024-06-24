@@ -5,18 +5,19 @@
     "process": "Processus"
   },
   "projects": {
+    "header": "Projets",
     "technologies": "Technologies utilisées",
     "1": {
       "title": "Shad",
-      "description": "Une application de développement personnel, iOS & Android. Se fixer des objectifs et des récompenses en respectant des routines journalières."
+      "description": "Une application de développement personnel pour iOS et Android, conçue pour fixer ses propres objectifs et récompenses en suivant des routines journalières."
     },
     "2": {
       "title": "Luter",
-      "description": "Un site d'accompagnement et de sécurisation de fonds pour les freelances"
+      "description": "Une plateforme web d'accompagnement et de sécurisation de fonds, agissant en tant qu'intermédiaire pour prévenir les impayés et les retards de paiement lors de missions effectuées par des freelances."
     },
     "3": {
       "title": "NFTXTL",
-      "description": "Un site e-commerce pour une marque de vêtements"
+      "description": "Un site e-commerce pour une marque de vêtements indépendante"
     },
     "4": {
       "title": "The Mongomery Diaries",

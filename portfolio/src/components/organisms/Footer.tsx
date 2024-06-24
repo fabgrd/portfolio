@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-secondary-light mt-32  mb-5">
+    <footer className="text-secondary-light mt-32 mb-5">
       <div className="container mx-auto flex flex-col items-center justify-between space-y-2 md:space-y-0 md:flex-row-reverse">
         <div className="flex space-x-2 mb-2 md:mb-0">
           <Button onClick={handleLinkedInClick} variant="primary">

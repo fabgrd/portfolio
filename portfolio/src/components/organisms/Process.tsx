@@ -21,7 +21,7 @@ const Process = () => {
               <h2 className="text-4xl font-light italic mb-4 text-primary-light text-center"
               dangerouslySetInnerHTML={{ __html: t("process.title") }}>
               </h2>
-              <p className="text-lg mb-4 text-primary-light">
+              <p className="text-center md:text-left text-lg mb-4 text-primary-light">
                 {t("process.presentation")}
               </p>
             </Parallax>
