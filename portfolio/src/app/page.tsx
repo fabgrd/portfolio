@@ -7,6 +7,7 @@ import Projects from "../components/organisms/Projects";
 import About from "../components/organisms/About";
 import Process from "../components/organisms/Process";
 import Footer from "../components/organisms/Footer";
+import YouTubeSection from "../components/organisms/YoutubeSection";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <About />
       <Process />
       <Projects />
+      <YouTubeSection />
       <Footer />
     </div>
   );

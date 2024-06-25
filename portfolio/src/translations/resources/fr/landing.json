@@ -27,6 +27,11 @@
       "title": "Area",
       "description": "Un projet d'école pour un site et une application mobile de gestion de tâches"
     }
+    
+  },
+  "epitech": {
+    "title":"Projets Epitech",
+    "description": "Voici quelques exemples de projets académiques que j'ai eu l'occasion de réaliser au cours de ma première année d'études."
   },
   "about": {
     "header": "À propos",
