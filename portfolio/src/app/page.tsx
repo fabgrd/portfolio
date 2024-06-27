@@ -12,7 +12,7 @@ import Contact from "@/components/organisms/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="z-10">
+    <div className="z-10 bg-primary-dark">
       <Navbar />
       <HeroBanner />
       <About />
