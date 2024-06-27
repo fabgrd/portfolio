@@ -9,6 +9,7 @@ import Process from "../components/organisms/Process";
 import Footer from "../components/organisms/Footer";
 import YouTubeSection from "../components/organisms/YoutubeSection";
 import Contact from "@/components/organisms/Contact";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <YouTubeSection />
       <Contact />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 };
