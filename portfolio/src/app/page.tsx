@@ -8,6 +8,7 @@ import About from "../components/organisms/About";
 import Process from "../components/organisms/Process";
 import Footer from "../components/organisms/Footer";
 import YouTubeSection from "../components/organisms/YoutubeSection";
+import Contact from "@/components/organisms/Contact";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Process />
       <Projects />
       <YouTubeSection />
+      <Contact />
       <Footer />
     </div>
   );

@@ -21,14 +21,14 @@ const Timeline: React.FC = () => {
   const events: TimelineEvent[] = [
     {
       id: 1,
-      date: "juil. 2021 - oct. 2021",
+      date: "jul. 2021 - oct. 2021",
       title: `${t("about.timeline.3.title")}`, 
       location: `${t("about.timeline.3.location")} 🇨🇭`,
       icon: LogoWavone,
     },
     {
       id: 2,
-      date: "oct. 2022 - juin 2023",
+      date: "oct. 2022 - jun. 2023",
       title: `${t("about.timeline.4.title")}`, 
       location: `${t("about.timeline.4.location")} 🌎`,
       icon: LogoFreelance,

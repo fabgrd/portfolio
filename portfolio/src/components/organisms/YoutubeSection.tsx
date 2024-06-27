@@ -28,7 +28,7 @@ const VideoSection: React.FC = () => {
         <motion.h1 className="text-4xl font-medium text-primary-light">
           {t("epitech.title")}
         </motion.h1>
-        <motion.p className="text-2xl font-thin text-primary-light mt-8 mb-16">
+        <motion.p className="text-2xl text-center font-thin text-primary-light mt-8 mb-16">
           {t("epitech.description")}
         </motion.p>
         <motion.div

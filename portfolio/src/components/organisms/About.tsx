@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import ProfilePicture from '@/assets/about/test2.png';
+import ProfilePicture from '@/assets/about/pp.png';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { useTranslation } from "next-i18next";
 import { motion } from 'framer-motion';
@@ -34,12 +34,12 @@ const About = () => {
                 <div>
                   <Parallax translateX={[-10, 10]}>
                     <motion.h1
-                      className="text-4xl whitespace-nowrap text font-thin -z-10"
+                      className="text-4xl whitespace-nowrap text font-medium -z-10"
                       initial={{ opacity: 0, y: -50 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 1 }}
                     >
-                      {t("about.header")}...
+                      {t("about.header")}
                     </motion.h1>
                   </Parallax>
                 </div>
@@ -72,7 +72,7 @@ const About = () => {
         <>
           <div className="ml-min-h-screen text-primary-light">
             <motion.h1
-              className="ml-10 text-5xl whitespace-nowrap font-thin -z-10"
+              className="ml-10 text-5xl whitespace-nowrap font-medium -z-10"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}

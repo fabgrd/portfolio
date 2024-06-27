@@ -2,7 +2,8 @@
   "navbar": {
     "projects": "Projects",
     "about": "About",
-    "process": "Process"
+    "process": "Process",
+    "contact": "Contact"
   },
   "projects": {
     "header": "Projects",
@@ -13,34 +14,34 @@
     },
     "2": {
       "title": "Luter",
-      "description": "A web platform for support and fund security, acting as an intermediary to prevent non-payments and delays in payments for freelance assignments."
+      "description": "A web platform for fund management and security, acting as an intermediary to prevent non-payment and delays for freelance missions."
     },
     "3": {
       "title": "NFTXTL",
-      "description": "An e-commerce website for an independent clothing brand."
+      "description": "An e-commerce site for an independent clothing brand."
     },
     "4": {
       "title": "The Mongomery Diaries",
-      "description": "A blog website for a writer."
-    },
-    "5": {
-      "title": "Area",
-      "description": "A school project for a task management website and mobile application."
+      "description": "A blog site for a writer (project under a non-disclosure agreement)."
     }
+  },
+  "epitech": {
+    "title": "Epitech Projects",
+    "description": "During my first year of studies, I had the opportunity to work on several academic projects that, despite being part of a general programming curriculum, already demonstrated my keen interest in web development."
   },
   "about": {
     "header": "About",
     "timeline": {
       "1": {
-        "title": "Master 2 (M2), Technology Expert",
+        "title": "Master's Degree Year 2 (M2), Expert in Technologies",
         "location": "Epitech, Lyon"
       },
       "2": {
-        "title": "Master 1 (M1), International Business and Software Engineering",
+        "title": "Master's Degree Year 1 (M1), International Business and Software Engineering",
         "location": "Feng Chia University, Taiwan"
       },
       "3": {
-        "title": "Front-End Developer Internship",
+        "title": "Front-End Developer Intern",
         "location": "Wav One Agency, Switzerland"
       },
       "4": {
@@ -50,21 +51,25 @@
     }
   },
   "process": {
-    "title": "Making my imagination work is my <span className=\"relative\"><span id=\"handDrawnCircle\">nindô</span></span>",
-    "presentation": "For many years, I have dedicated my efforts to developing reliable digital solutions, which has allowed me to establish myself as a full-stack developer. My time at Epitech provided me with in-depth training in problem-solving and expertise in programming across a variety of languages and diverse projects. Additionally, my unique background has equipped me with significant experience in graphic design, defining me as a creative coder, far beyond the traditional role of a web integrator.",
+    "title": "Making my imagination work, that’s my <span className=\"relative\"><span id=\"handDrawnCircle\">nindô</span></span>",
+    "presentation": "For many years, I have been dedicated to developing reliable digital solutions, positioning myself as a full-stack developer. My journey at Epitech provided me with extensive problem-solving training and expertise in programming across various languages and projects. Additionally, my unique background has enabled me to gain significant experience in graphic design, defining me as a creative coder, far beyond the traditional role of a web integrator.",
     "cards": {
       "conception": {
         "title": "Conception",
-        "description": "Do you have an ambitious project? Do you need an MVP? With my graphic sensitivity, I can design modern mockups with an effective UI/UX, as well as address unique projects (including 3D integration, for example), while advising you on the feasibility of your ideas."
+        "description": "Do you have an ambitious project? Need an MVP? With my graphic sensitivity, I can design modern mockups with effective UI/UX, and also take on unique projects (including 3D integration, for example), while advising you on the feasibility of your ideas."
       },
       "development": {
         "title": "Development",
-        "description": "Whether it is for a website, a mobile application, or even a software solution, I can identify the latest and most appropriate technologies for your project. I prioritize an approach that values quality and scalability."
+        "description": "Whether it's for a website, a mobile application, or even a software solution, I can identify the most recent and appropriate technologies for your project. I favor an approach that values quality and scalability."
       },
       "deployment": {
         "title": "Deployment",
-        "description": "I offer a complete deployment service to ensure the proper launch and optimal functioning of your solution. I handle hosting, server configuration, performance optimization, security, and manage all technical aspects."
+        "description": "I offer a complete deployment service to ensure the proper launch and optimal operation of your solution. I handle hosting, server configuration, performance optimization, security, and the management of all technical aspects."
       }
     }
+  },
+  "contact": {
+    "title": "Let’s keep in <span className=\"relative\"><span id=\"handDrawnScribble\">touch</span></span>",
+    "description": "Would you like to contact me for a project or a job opportunity? Schedule a meeting with me by selecting a time slot below."
   }
 }

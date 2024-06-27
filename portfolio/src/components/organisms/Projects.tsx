@@ -5,7 +5,7 @@ import { useTranslation } from "next-i18next";
 import ShadMockup from '@/assets/projects/Shad.png';
 import LuterMockup from '@/assets/projects/Luter.png';
 import NftxtlMockup from '@/assets/projects/Nftxtl.png';
-import AreaMockup from '@/assets/projects/Nftxtl.png';
+import MontgomeryMockup from '@/assets/projects/Montgomery.png';
 import ProjectCard from '@/components/molecules/ProjectCard';
 
 const Projects: React.FC = () => {
@@ -37,12 +37,12 @@ const Projects: React.FC = () => {
             <ParallaxProvider>
               <Parallax translateX={[-10, 10]}>
                 <motion.h1
-                  className="text-4xl whitespace-nowrap text font-thin -z-10"
+                  className="text-4xl whitespace-nowrap text font-medium -z-10"
                   initial={{ opacity: 0, y: -50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  {t("projects.header")}...
+                  {t("projects.header")}
                 </motion.h1>
               </Parallax>
             </ParallaxProvider>
@@ -69,10 +69,10 @@ const Projects: React.FC = () => {
             />
             <ProjectCard
               id={4}
-              src={AreaMockup}
+              src={MontgomeryMockup}
               alt="The Montgomery Diaries"
               description="projects.4.description"
-              technologies="NestJS, ReactJS, TypeScript, Vercel"
+              technologies="ReactJS, TypeScript, Vercel"
             />
           </div>
         </div>
@@ -111,10 +111,10 @@ const Projects: React.FC = () => {
               />
               <ProjectCard
                 id={4}
-                src={AreaMockup}
+                src={MontgomeryMockup}
                 alt="The Montgomery Diaries"
                 description="projects.4.description"
-                technologies="NestJS, ReactJS, TypeScript, Vercel"
+                technologies="ReactJS, TypeScript, Vercel"
               />
             </div>
           </div>

@@ -29,11 +29,32 @@ html, body {
 #handDrawnCircle {
   position: relative;
   padding-bottom: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 20px;
 }
 
+#handDrawnScribble::before {
+  content: '';
+  background-image: url('../assets/about/angry-underline.svg');
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+}
+
+#handDrawnScribble {
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

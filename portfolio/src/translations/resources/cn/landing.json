@@ -1,69 +1,75 @@
 {
   "navbar": {
-    "projects": "專案",
-    "about": "關於我",
-    "process": "流程"
+    "projects": "項目",
+    "about": "關於",
+    "process": "過程",
+    "contact": "聯繫"
   },
   "projects": {
-    "technologies": "使用技術",
+    "header": "項目",
+    "technologies": "使用的技術",
     "1": {
       "title": "Shad",
-      "description": "一個個人成長應用，iOS 和 Android 平台。通過日常打卡設立目標並獲得獎勵。"
+      "description": "一個針對 iOS 和 Android 的個人發展應用程式，旨在通過每日例行活動來設定自己的目標和獎勵。"
     },
     "2": {
       "title": "Luter",
-      "description": "一個為自由職業者提供資金支持和安全保障的網站"
+      "description": "一個資金保全和支持的網絡平台，充當中介角色，以防止自由職業者在完成任務時出現支付逾期或未支付的情況。"
     },
     "3": {
       "title": "NFTXTL",
-      "description": "一個服裝品牌的電子商務網站"
+      "description": "一個獨立服裝品牌的電子商務網站。"
     },
     "4": {
       "title": "The Mongomery Diaries",
-      "description": "一個作家的博客網站"
-    },
-    "5": {
-      "title": "Area",
-      "description": "一個學校項目，用於任務管理的網站和移動應用"
+      "description": "一個為作家設計的博客網站（此任務受保密協議約束）。"
     }
   },
+  "epitech": {
+    "title": "Epitech 項目",
+    "description": "在我的第一年學習期間，我有機會完成了幾個學術項目，這些項目雖然是一般編程學習課程的一部分，但已經顯示出我對網絡開發的濃厚興趣。"
+  },
   "about": {
-    "header": "關於我",
+    "header": "關於",
     "timeline": {
       "1": {
-        "title": "碩士二年級 (M2)，技術專家",
+        "title": "碩士二年級（M2），技術專家",
         "location": "Epitech，里昂"
       },
       "2": {
-        "title": "碩士一年級 (M1)，國際商務與軟體工程",
+        "title": "碩士一年級（M1），國際商務與軟件工程",
         "location": "逢甲大學，台灣"
       },
       "3": {
-        "title": "前端開發實習",
+        "title": "前端開發實習生",
         "location": "Wav One Agency，瑞士"
       },
       "4": {
-        "title": "全端開發者",
+        "title": "全棧開發人員",
         "location": "自由職業"
       }
     }
   },
   "process": {
-    "title": "激發我的想像力，就是我的<span className=\"relative\"><span id=\"handDrawnCircle\">忍道</span></span>",
-    "presentation": "多年來，我致力於開發可靠的數位解決方案，使我成為一名全端開發者。在Epitech的經歷使我獲得了深厚的問題解決能力和多語言編程的專業知識，應用於各種不同的專案。此外，我獨特的經歷還使我在圖形設計方面積累了豐富的經驗，使我不僅僅是一名傳統的網頁整合開發者，而是一名創意編程者。",
+    "title": "讓我的想像力運作，這是我的<span className=\"relative\"><span id=\"handDrawnCircle\">忍道</span></span>",
+    "presentation": "多年來，我致力於開發可靠的數字解決方案，這使我成為一名全棧開發人員。Epitech 的學習過程為我提供了深入的問題解決培訓，並使我在各種語言和項目中積累了編程專業知識。此外，我的獨特經歷使我獲得了豐富的圖形設計經驗，這使我成為一名創意編碼師，遠遠超出傳統的網頁集成師的角色。",
     "cards": {
       "conception": {
         "title": "構思",
-        "description": "您有雄心勃勃的專案嗎？需要一個 MVP 嗎？憑藉我對圖形的敏感度，我可以設計現代化的模型，具備高效的 UI/UX，並且能夠應對獨特的專案（例如包括 3D 整合），同時在您的想法可行性方面提供建議。"
+        "description": "您有一個雄心勃勃的項目嗎？需要一個 MVP 嗎？憑藉我對圖形的敏感度，我可以設計具有現代化 UI/UX 的原型圖，同時還可以應對獨特的項目（例如包含3D集成的項目），並為您的想法可行性提供建議。"
       },
       "development": {
         "title": "開發",
-        "description": "無論是網站、移動應用程式還是軟體解決方案，我都能夠識別出最適合您專案的最新技術。我強調質量和可擴展性的開發方法。"
+        "description": "無論是網站、移動應用程式還是軟件解決方案，我都能識別出最合適且最新的技術，以應對您的項目。我優先考慮質量和可擴展性。"
       },
       "deployment": {
         "title": "部署",
-        "description": "我提供完整的部署服務，以確保您的解決方案能夠正確上線並運行順暢。我負責托管、伺服器配置、性能優化、安全保護和所有技術方面的管理。"
+        "description": "我提供完整的部署服務，以確保您的解決方案能夠正確上線並達到最佳運行狀態。我負責主機託管、服務器配置、性能優化、安全保護和所有技術方面的管理。"
       }
     }
+  },
+  "contact": {
+    "title": "保持<span className=\"relative\"><span id=\"handDrawnScribble\">聯繫</span></span>",
+    "description": "您想就一個項目或一份工作機會與我聯繫嗎？請通過以下選擇一個時間段來預約與我的會面。"
   }
 }

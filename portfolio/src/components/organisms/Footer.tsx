@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   const handleGitHubClick = () => {
-    window.open('https://github.com/votre-profil', '_blank');
+    window.open('https://github.com/fabgrd', '_blank');
   };
 
   return (

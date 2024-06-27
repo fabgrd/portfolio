@@ -2,7 +2,8 @@
   "navbar": {
     "projects": "Projets",
     "about": "À propos",
-    "process": "Processus"
+    "process": "Processus",
+    "contact": "Contact"
   },
   "projects": {
     "header": "Projets",
@@ -21,17 +22,12 @@
     },
     "4": {
       "title": "The Mongomery Diaries",
-      "description": "Un site de blog pour une écrivaine"
-    },
-    "5": {
-      "title": "Area",
-      "description": "Un projet d'école pour un site et une application mobile de gestion de tâches"
+      "description": "Un site de blog pour une écrivaine (mission soumise à un accord de non-divulgation)."
     }
-    
   },
   "epitech": {
     "title":"Projets Epitech",
-    "description": "Voici quelques exemples de projets académiques que j'ai eu l'occasion de réaliser au cours de ma première année d'études."
+    "description": "Au cours de ma première année d'études, j'ai eu l'opportunité de réaliser plusieurs projets académiques qui, bien que faisant partie d'un cursus général d'apprentissage de la programmation, témoignent déjà de mon intérêt marqué pour le développement web."
   },
   "about": {
     "header": "À propos",
@@ -71,5 +67,9 @@
         "description": "Je propose un service de déploiement complet pour assurer la mise en ligne correcte et le fonctionnement optimal de votre solution. Je prends en charge l'hébergement, la configuration des serveurs, l'optimisation des performances, la sécurisation et la gestion de tous les aspects techniques."
       }
     }
+  },
+  "contact": {
+    "title": "Restons en <span className=\"relative\"><span id=\"handDrawnScribble\">contact</span></span>",
+    "description": "Vous souhaitez me contacter pour un projet ou pour une offre d'emploi ? Prenez rendez-vous avec moi en choisissant un créneau ci-dessous."
   }
 }

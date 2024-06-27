@@ -42,7 +42,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 z-[1000] w-full`}
     >
-      <ul className="justify-around items-center hidden md:flex">
+      <ul className="justify-around items-center hidden lg:flex">
         <NavbarElement
           title={t("navbar.about")}
           scrollToId="about"
@@ -56,6 +56,11 @@ const Navbar = () => {
         <NavbarElement
           title={t("navbar.projects")}
           scrollToId="projects"
+          setActiveElement={handleSetActiveElement}
+        />
+        <NavbarElement
+          title={t("navbar.contact")}
+          scrollToId="contact"
           setActiveElement={handleSetActiveElement}
         />
       </ul>
