@@ -69,7 +69,7 @@
     }
   },
   "contact": {
-    "title": "保持<span className=\"relative\"><span id=\"handDrawnScribble\">聯繫</span></span>",
+    "title": "保持<span className=\"relative\"><span id=\"handDrawnUnderline\">聯繫</span></span>",
     "description": "您想就一個項目或一份工作機會與我聯繫嗎？請通過以下選擇一個時間段來預約與我的會面。"
   }
 }

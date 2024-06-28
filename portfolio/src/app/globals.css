@@ -34,7 +34,7 @@ html, body {
   padding-top: 20px;
 }
 
-#handDrawnScribble::before {
+#handDrawnUnderline::before {
   content: '';
   background-image: url('../assets/about/angry-underline.svg');
   background-repeat: no-repeat;
@@ -45,10 +45,10 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 
-#handDrawnScribble {
+#handDrawnUnderline {
   position: relative;
   padding-bottom: 50px;
   padding-left: 10px;

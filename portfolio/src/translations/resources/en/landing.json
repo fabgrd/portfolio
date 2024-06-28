@@ -69,7 +69,7 @@
     }
   },
   "contact": {
-    "title": "Let’s keep in <span className=\"relative\"><span id=\"handDrawnScribble\">touch</span></span>",
+    "title": "Let’s keep in <span className=\"relative\"><span id=\"handDrawnUnderline\">touch</span></span>",
     "description": "Would you like to contact me for a project or a job opportunity? Schedule a meeting with me by selecting a time slot below."
   }
 }

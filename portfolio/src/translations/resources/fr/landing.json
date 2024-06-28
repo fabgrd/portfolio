@@ -69,7 +69,7 @@
     }
   },
   "contact": {
-    "title": "Restons en <span className=\"relative\"><span id=\"handDrawnScribble\">contact</span></span>",
+    "title": "Restons en <span className=\"relative\"><span id=\"handDrawnUnderline\">contact</span></span>",
     "description": "Vous souhaitez me contacter pour un projet ou pour une offre d'emploi ? Prenez rendez-vous avec moi en choisissant un créneau ci-dessous."
   }
 }
