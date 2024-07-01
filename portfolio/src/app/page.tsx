@@ -10,6 +10,7 @@ import Footer from "../components/organisms/Footer";
 import YouTubeSection from "../components/organisms/YoutubeSection";
 import Contact from "@/components/organisms/Contact";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <Contact />
       <Footer />
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 };
