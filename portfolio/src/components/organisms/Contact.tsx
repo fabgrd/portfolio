@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
         <div className="flex items-center text-lg text-primary-light">
           <FaEnvelope className="mr-2" />
-          <a href="mailto:info@fabiengiraudier.com" className="hover:underline">info@fabiengiraudier.com</a>
+          <a href="mailto:fabien.giraudier@epitech.eu" className="hover:underline">info@fabiengiraudier.com</a>
         </div>
       </div>
     </div>

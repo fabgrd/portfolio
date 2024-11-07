@@ -10,7 +10,7 @@
     "technologies": "Technologies utilisées",
     "1": {
       "title": "Shad",
-      "description": "Une application de développement personnel pour iOS et Android, conçue pour fixer ses propres objectifs et récompenses en suivant des routines journalières."
+      "description": "Une application mobile de développement personnel pour iOS et Android comprenant des routines personnalisables, la fixation d'objectifs et des récompenses, un suivi quotidien, une ligue compétitive gamifiée et un système de profil avec une fonctionnalité d'ajout d'amis."
     },
     "2": {
       "title": "Luter",
@@ -18,7 +18,7 @@
     },
     "3": {
       "title": "NFTXTL",
-      "description": "Un site e-commerce pour une marque de vêtements indépendante"
+      "description": "Un site e-commerce pour une marque de vêtements indépendante avec une intégration de paiement par crypto-monnaie."
     },
     "4": {
       "title": "The Mongomery Diaries",
@@ -33,11 +33,11 @@
     "header": "À propos",
     "timeline": {
       "1": {
-        "title": "Master 2 (M2), Expert en technologies",
+        "title": "Master 2 (M2), Expert en Technologies de l'Information",
         "location": "Epitech, Lyon"
       },
       "2": {
-        "title": "Master 1 (M1), Business international et ingénieurerie logicielle",
+        "title": "Échange Universitaire, Business International et Ingénierie Logicielle",
         "location": "Feng Chia University, Taïwan"
       },
       "3": {

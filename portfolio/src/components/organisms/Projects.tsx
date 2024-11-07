@@ -51,28 +51,28 @@ const Projects: React.FC = () => {
               src={ShadMockup}
               alt="Shad"
               description="projects.1.description"
-              technologies="React Native, Redux, MongoDB, NodeJS"
+              technologies="React Native, Redux RTK + RTK Query, MongoDB, NodeJS, TypeScript, Tailwind, Docker, Expo Go Managed CLI"
             />
             <ProjectCard
               id={2}
               src={LuterMockup}
               alt="Luter"
               description="projects.2.description"
-              technologies="ThreeJS, Stripe, ReactJS, TypeScript, Redux, Tailwind"
+              technologies="ReactJS, ThreeJS, Stripe, TypeScript, Redux, Tailwind, Docker, Redux RTK + RTK Query"
             />
             <ProjectCard
               id={3}
               src={NftxtlMockup}
               alt="NFTXTL"
               description="projects.3.description"
-              technologies="Stripe, Sanity, ReactJS, TypeScript, Redux"
+              technologies="NextJS, ReactJS, Stripe, Sanity, CSS, TypeScript, Taquito, Redux"
             />
             <ProjectCard
               id={4}
               src={MontgomeryMockup}
               alt="The Montgomery Diaries"
               description="projects.4.description"
-              technologies="ReactJS, TypeScript, Vercel"
+              technologies="NextJS, ReactJS, TypeScript, Tailwind, Vercel"
             />
           </div>
         </div>
