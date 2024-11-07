@@ -32,11 +32,11 @@ const Contact = () => {
       <div className="flex flex-col items-center space-y-4">
         <div className="flex items-center text-lg text-primary-light">
           <FaPhone className="mr-2" /> 
-          <a href="tel:+88698375971222" className="hover:underline">+886 (0)9 837 597 1222</a>
+          <a href="tel:+33683087745" className="hover:underline">+33 (0)6 83 08 77 45</a>
         </div>
         <div className="flex items-center text-lg text-primary-light">
           <FaEnvelope className="mr-2" />
-          <a href="mailto:fabien.giraudier@epitech.eu" className="hover:underline">info@fabiengiraudier.com</a>
+          <a href="mailto:fabien.giraudier@epitech.eu" className="hover:underline">fabien.giraudier@epitech.eu</a>
         </div>
       </div>
     </div>
