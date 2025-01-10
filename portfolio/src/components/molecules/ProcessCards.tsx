@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({ gif, title, description, index }) => {
 
     const rect = ref.current.getBoundingClientRect();
 
-    const ROTATION_RANGE = 30;
+    const ROTATION_RANGE = 25;
     const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
     const width = rect.width;

@@ -25,14 +25,14 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "primary-dark": "#000000",
-        "primary-light": "#FFFFFF",
+        "primary-dark": "#040404",
+        "primary-light": "#F4F4F4",
         "secondary-dark" : "#181818",
         "secondary-light": "#444444"
       },
       textColor: {
-        dark: "#000000",
-        light: "#FFFFFF",
+        dark: "#040404",
+        light: "#F4F4F4",
       },
       fontFamily: {
         sans: ['var(--font-apfel)']
