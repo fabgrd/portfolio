@@ -66,7 +66,7 @@ const Card: React.FC<CardProps> = ({ gif, title, description, index }) => {
     >
       <div className="flex items-center mb-2">
         <Image src={gif} unoptimized alt={title} className="w-16 h-16 mr-2" />
-        <h3 className="text-xl md:text-2xl font-bold">{title}</h3>
+        <h3 className="text-xl md:text-xl font-bold">{title}</h3>
       </div>
       <p className="text-base">{description}</p>
     </motion.div>

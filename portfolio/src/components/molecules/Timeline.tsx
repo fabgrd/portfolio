@@ -5,6 +5,7 @@ import LogoEpitech from '@/assets/about/logo-epitech.png';
 import LogoFengchia from '@/assets/about/logo-fengchia.png';
 import LogoWavone from '@/assets/about/logo-wavone.png';
 import LogoFreelance from '@/assets/about/logo-freelance.png';
+import LogoSilex from '@/assets/about/logo-silex.png';
 import TimelineItem from '@/components/atoms/TimelineItem';
 
 interface TimelineEvent {
@@ -46,6 +47,13 @@ const Timeline: React.FC = () => {
       title: `${t("about.timeline.1.title")}`, 
       location: `${t("about.timeline.1.location")} 🇫🇷`,
       icon: LogoEpitech,
+    },
+    {
+      id: 5,
+      date: "mar. 2025 - sep. 2025",
+      title: `${t("about.timeline.5.title")}`, 
+      location: `${t("about.timeline.5.location")} 🇨🇭`,
+      icon: LogoSilex,
     },
   ];
 
