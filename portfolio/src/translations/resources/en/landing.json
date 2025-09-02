@@ -32,6 +32,10 @@
   "about": {
     "header": "About",
     "timeline": {
+      "0": {
+        "title": "Front-End Developer Intern",
+        "location": "Silex Partners, Geneva"
+      },
       "1": {
         "title": "Master's Degree Year 2 (M2), Information Technology Expert",
         "location": "Epitech, Lyon"
@@ -47,11 +51,8 @@
       "4": {
         "title": "Full Stack Developer",
         "location": "Freelance"
-      },
-      "5": {
-        "title": "Front-End Developer",
-        "location": "Silex Partners, Geneva"
       }
+
     }
   },
   "process": {

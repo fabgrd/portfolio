@@ -1,11 +1,10 @@
 "use client"
 
-import React from 'react';
-import dynamic from 'next/dynamic';
-import { MoonLoader } from 'react-spinners';
+import { useTranslation } from "@/app/PortfolioClient";
 import { motion } from 'framer-motion';
-import { useTranslation } from "next-i18next";
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { MoonLoader } from 'react-spinners';
 
 const CalendlyCalendar = dynamic(() => import('../molecules/CalendlyCalendar'), { ssr: false });
 

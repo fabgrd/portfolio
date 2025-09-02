@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { motion, useMotionTemplate, useMotionValue, useSpring } from 'framer-motion';
-import { useTranslation } from "next-i18next";
-import GifConception from '@/assets/about/paint-palette.gif';
+import { useTranslation } from "@/app/PortfolioClient";
 import GifDevelopment from '@/assets/about/html.gif';
+import GifConception from '@/assets/about/paint-palette.gif';
 import GifDeployment from '@/assets/about/rocket.gif';
+import { motion, useMotionTemplate, useMotionValue, useSpring } from 'framer-motion';
+import Image, { StaticImageData } from 'next/image';
+import React, { useRef } from 'react';
 
 interface CardProps {
   gif: StaticImageData;

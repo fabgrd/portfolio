@@ -1,7 +1,6 @@
-import React from 'react';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "@/app/PortfolioClient";
 import { motion } from 'framer-motion';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import CardSection from '../../components/molecules/ProcessCards';
 
 const Process = () => {

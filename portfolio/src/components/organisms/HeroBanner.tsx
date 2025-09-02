@@ -1,12 +1,11 @@
-import React from "react";
 import Spline from '@splinetool/react-spline';
+import React from "react";
 import ScrollButton from '../atoms/ScrollButton';
 
 const HeroBanner = () => {
-  const handleScrollClick = (e: any) => {
-    e.preventDefault();
+  const handleScrollClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.preventDefault();
     const element = document.getElementById("about");
-    console.log(element);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 

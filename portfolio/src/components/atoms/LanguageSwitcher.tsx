@@ -1,16 +1,19 @@
-import { useTranslation } from "next-i18next";
-import { FR, GB, CN } from "country-flag-icons/react/3x2";
+import { useTranslation } from "@/app/PortfolioClient";
+import { Locale } from "@/lib/i18n";
+import { CN, FR, GB } from "country-flag-icons/react/3x2";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  const { locale, changeLanguage } = useTranslation();
 
-  const onToggleLanguageClick = (newLocale: string) => {
-    i18n.changeLanguage(newLocale);
+  const onToggleLanguageClick = async (newLocale: Locale) => {
+    if (newLocale !== locale) {
+      await changeLanguage(newLocale);
+    }
   };
 
-  const getButtonClass = (locale: string) => {
-    return `focus:outline-none px-2 py-1 rounded-xl ${
-      i18n.language === locale ? "border-2 border-primary-light" : ""
+  const getButtonClass = (localeCode: string) => {
+    return `focus:outline-none px-2 py-1 rounded-xl transition-all duration-200 hover:scale-105 ${
+      locale === localeCode ? "border-2 border-primary-light" : ""
     }`;
   };
 
@@ -21,7 +24,7 @@ const LanguageSwitcher = () => {
         onClick={() => onToggleLanguageClick("en")}
         style={{
           background:
-            i18n.language === "en"
+            locale === "en"
               ? "linear-gradient(to right, #02081E, #000000)"
               : "none",
         }}
@@ -33,7 +36,7 @@ const LanguageSwitcher = () => {
         onClick={() => onToggleLanguageClick("fr")}
         style={{
           background:
-            i18n.language === "fr"
+            locale === "fr"
               ? "linear-gradient(to right, #02081E, #000000)"
               : "none",
         }}
@@ -45,7 +48,7 @@ const LanguageSwitcher = () => {
         onClick={() => onToggleLanguageClick("cn")}
         style={{
           background:
-            i18n.language === "cn"
+            locale === "cn"
               ? "linear-gradient(to right, #02081E, #000000)"
               : "none",
         }}

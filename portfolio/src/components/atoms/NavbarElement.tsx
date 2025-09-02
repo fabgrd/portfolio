@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useScrollHandler } from "@/hooks/useScrollHandler";
 import clsx from "clsx";
+import { motion } from "framer-motion";
+import React, { useCallback, useEffect, useState } from "react";
 
-type NavbarElementProps = {
+interface NavbarElementProps {
   title: string;
   scrollToId: string;
   setActiveElement: (scrollToId: string) => void;
-};
+}
 
 const NavbarElement: React.FC<NavbarElementProps> = ({
   title,
@@ -15,24 +16,23 @@ const NavbarElement: React.FC<NavbarElementProps> = ({
 }) => {
   const [isInView, setIsInView] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById(scrollToId);
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        const isInViewport =
-          rect.bottom >= window.innerHeight / 2 &&
-          rect.top <= window.innerHeight / 2;
-        setIsInView(isInViewport);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+  const checkInView = useCallback(() => {
+    const element = document.getElementById(scrollToId);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const isInViewport =
+        rect.bottom >= window.innerHeight / 2 &&
+        rect.top <= window.innerHeight / 2;
+      setIsInView(isInViewport);
+    }
   }, [scrollToId]);
+
+  useScrollHandler(checkInView, { throttleMs: 16 });
+
+  useEffect(() => {
+    // Initial check
+    checkInView();
+  }, [checkInView]);
 
   useEffect(() => {
     if (isInView) {

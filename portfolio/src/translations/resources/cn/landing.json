@@ -32,6 +32,10 @@
   "about": {
     "header": "關於",
     "timeline": {
+      "0": {
+        "title": "前端開發實習生",
+        "location": "Silex Partners，日內瓦"
+      },
       "1": {
         "title": "碩士二年級（M2），技術專家",
         "location": "Epitech，里昂"
@@ -47,11 +51,8 @@
       "4": {
         "title": "全棧開發人員",
         "location": "自由職業"
-      },
-      "5": {
-        "title": "前端開發人員",
-        "location": "Silex Partners，日內瓦"
       }
+
     }
   },
   "process": {

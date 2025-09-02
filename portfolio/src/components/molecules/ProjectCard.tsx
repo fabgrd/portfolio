@@ -1,7 +1,7 @@
-import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform, MotionValue } from "framer-motion";
+import { useTranslation } from "@/app/PortfolioClient";
+import { motion, MotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import { useTranslation } from "next-i18next";
+import { useRef } from "react";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -42,6 +42,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, src, alt, description, te
           alt={alt}
           className="flex rounded-lg shadow-lg"
           width={800}
+          height={600}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+          priority={id <= 2}
+          placeholder="blur"
         />
       </div>
       <div className="flex justify-between mt-4">

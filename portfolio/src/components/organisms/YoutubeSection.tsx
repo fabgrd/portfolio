@@ -1,6 +1,6 @@
+import { useTranslation } from "@/app/PortfolioClient";
+import { motion, MotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform, MotionValue } from "framer-motion";
-import { useTranslation } from "next-i18next";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);

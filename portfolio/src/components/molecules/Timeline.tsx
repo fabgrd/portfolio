@@ -1,12 +1,12 @@
-import React from "react";
-import { useTranslation } from "next-i18next";
-import Image , { StaticImageData } from 'next/image';
+import { useTranslation } from "@/app/PortfolioClient";
 import LogoEpitech from '@/assets/about/logo-epitech.png';
 import LogoFengchia from '@/assets/about/logo-fengchia.png';
-import LogoWavone from '@/assets/about/logo-wavone.png';
 import LogoFreelance from '@/assets/about/logo-freelance.png';
 import LogoSilex from '@/assets/about/logo-silex.png';
+import LogoWavone from '@/assets/about/logo-wavone.png';
 import TimelineItem from '@/components/atoms/TimelineItem';
+import { StaticImageData } from 'next/image';
+import React from "react";
 
 interface TimelineEvent {
   id: number;
@@ -51,8 +51,8 @@ const Timeline: React.FC = () => {
     {
       id: 5,
       date: "mar. 2025 - sep. 2025",
-      title: `${t("about.timeline.5.title")}`, 
-      location: `${t("about.timeline.5.location")} 🇨🇭`,
+      title: `${t("about.timeline.0.title")}`, 
+      location: `${t("about.timeline.0.location")} 🇨🇭`,
       icon: LogoSilex,
     },
   ];

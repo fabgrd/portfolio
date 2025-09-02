@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useTranslation } from "@/app/PortfolioClient";
+import { useScrollHandler } from "@/hooks/useScrollHandler";
 import { motion, useAnimation } from "framer-motion";
-import { useTranslation } from "next-i18next";
+import { useEffect, useState } from "react";
 import LanguageSwitcher from "../atoms/LanguageSwitcher";
 import NavbarElement from "../atoms/NavbarElement";
 
@@ -14,19 +15,11 @@ const Navbar = () => {
     setActiveElement(scrollToId);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > window.innerHeight / 4 &&
-        window.scrollY < document.body.scrollHeight - window.innerHeight * 1.2;
-      setIsScrolled(scrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  useScrollHandler((scrollY) => {
+    const scrolled = scrollY > window.innerHeight / 4 &&
+      scrollY < document.body.scrollHeight - window.innerHeight * 1.2;
+    setIsScrolled(scrolled);
+  }, { throttleMs: 16 });
 
   useEffect(() => {
     controls.start({

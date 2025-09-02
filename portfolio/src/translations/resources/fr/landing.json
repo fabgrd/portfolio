@@ -32,6 +32,10 @@
   "about": {
     "header": "À propos",
     "timeline": {
+      "0": {
+        "title": "Stage Développeur Front-End",
+        "location": "Silex Partners, Genève"
+      },
       "1": {
         "title": "Master 2 (M2), Expert en Technologies de l'Information",
         "location": "Epitech, Lyon"
@@ -47,11 +51,8 @@
       "4": {
         "title": "Développeur Full Stack",
         "location": "Freelance"
-      },
-      "5": {
-        "title": "Développeur Front-End",
-        "location": "Silex Partners, Genève"
       }
+
     }
   },
   "process": {

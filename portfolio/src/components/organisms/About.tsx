@@ -1,33 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import ProfilePicture from '@/assets/about/pp.png';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "@/app/PortfolioClient";
+import ProfilePicture from '@/assets/about/pp2.png';
+import { useResponsive } from '@/hooks/useResponsive';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Timeline from '../molecules/Timeline';
 
 const About = () => {
   const { t } = useTranslation();
-  const [isMdOrLarger, setIsMdOrLarger] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 640px)');
-    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-      setIsMdOrLarger(event.matches);
-    };
-
-    setIsMdOrLarger(mediaQuery.matches);
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
+  const { isDesktop } = useResponsive();
 
   return (
     <>
-      {isMdOrLarger ? (
+      {isDesktop ? (
         <div className="min-h-screen bg-gradient-to-b from-[#000000] to-primary-dark text-primary-light flex items-center" id='about'>
           <div className="container mx-auto p-8 flex flex-col justify-center">
             <ParallaxProvider>

@@ -1,37 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import { motion } from 'framer-motion';
-import { useTranslation } from "next-i18next";
-import ShadMockup from '@/assets/projects/Shad.png';
+import { useTranslation } from "@/app/PortfolioClient";
 import LuterMockup from '@/assets/projects/Luter.png';
-import NftxtlMockup from '@/assets/projects/Nftxtl.png';
 import MontgomeryMockup from '@/assets/projects/Montgomery.png';
+import NftxtlMockup from '@/assets/projects/Nftxtl.png';
+import ShadMockup from '@/assets/projects/Shad.png';
 import ProjectCard from '@/components/molecules/ProjectCard';
+import { useResponsive } from '@/hooks/useResponsive';
+import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
-
+  const { isDesktop } = useResponsive();
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const [isMdOrLarger, setIsMdOrLarger] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 640px)');
-    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-      setIsMdOrLarger(event.matches);
-    };
-
-    setIsMdOrLarger(mediaQuery.matches);
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
 
   return (
     <>
-      {isMdOrLarger ? (
+      {isDesktop ? (
         <div className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-dark text-primary-light p-8" id="projects" ref={containerRef}>
           <div className="container mx-auto p-8 flex flex-col justify-center">
             <ParallaxProvider>
