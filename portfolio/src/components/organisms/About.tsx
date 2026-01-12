@@ -1,5 +1,5 @@
 import { useTranslation } from "@/app/PortfolioClient";
-import ProfilePicture from '@/assets/about/pp2.png';
+import ProfilePicture from '@/assets/about/pp.png';
 import { useResponsive } from '@/hooks/useResponsive';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
